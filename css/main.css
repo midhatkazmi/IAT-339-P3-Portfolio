@@ -1,0 +1,65 @@
+/*Style Guide*/
+
+* {
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #555;
+}
+
+.header {
+	border-bottom: solid 1px #EEE;
+}
+
+.logomark {}
+
+.logomark:hover, .logomark:focus, .logomark:active {}
+
+.logotype {
+	margin: 1rem;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+.logotype:hover, .logotype:focus, .logotype:active {}
+
+.nav {
+	margin: 1rem;
+}
+
+.nav-link {
+	padding: 1rem;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {}
+
+.button-scroll-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	padding: 0.5rem;
+	color: red;
+	border-radius: 100%;
+	/*transition: color 0.25s, background color 0.25s;*/
+}
+
+.button-scroll-to-top:hover, .button-scroll-to-top:focus {
+	background-color: red;
+	color: white;
+	/*transition: color 0.25s, background color 0.25s;*/
+}
+
+.section {
+	margin: auto;
+	width: 50%;
+	border-bottom: solid #EEE 1px;
+}
+
+/*Portfolio*/
+
+.current-page {}
+
+/*About*/
+
+/*Contact*/
+
+/*Project*/

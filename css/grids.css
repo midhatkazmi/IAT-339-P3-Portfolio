@@ -1,0 +1,11 @@
+/*Style Guide*/
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
