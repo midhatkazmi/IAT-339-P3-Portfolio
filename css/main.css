@@ -1,26 +1,37 @@
 /*Style Guide*/
 
-* {
-	font-family: sans-serif;
-	text-decoration: none;
+body {
 	color: #555;
+	font-family: 'Catamaran', sans-serif;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+	font-weight: 600;
 }
 
 .header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
 	border-bottom: solid 1px #EEE;
+	text-transform: lowercase;
 }
 
-.logomark {}
+.logo {}
 
-.logomark:hover, .logomark:focus, .logomark:active {}
+.logo:hover, .logo:focus, .logo:active {}
 
-.logotype {
+.heading {
 	margin: 1rem;
 	padding: 1rem;
 	font-size: 1rem;
+	font-weight: 600;
 }
 
-.logotype:hover, .logotype:focus, .logotype:active {}
+.heading:hover, .heading:focus, .heading:active {}
 
 .nav {
 	margin: 1rem;
@@ -32,26 +43,51 @@
 
 .nav-link:hover, .nav-link:focus, .nav-link:active {}
 
-.button-scroll-to-top {
+.button-scroll-to-top .material-icons {
 	position: fixed;
 	bottom: 2rem;
 	right: 2rem;
 	padding: 0.5rem;
-	color: red;
 	border-radius: 100%;
-	/*transition: color 0.25s, background color 0.25s;*/
+	background-color: white;
+	color: red;
+	font-size: 2rem;
+	transition: background-color 0.25s, color 0.25s;
 }
 
-.button-scroll-to-top:hover, .button-scroll-to-top:focus {
+.button-scroll-to-top .material-icons:hover, .button-scroll-to-top .material-icons:focus {
 	background-color: red;
 	color: white;
-	/*transition: color 0.25s, background color 0.25s;*/
+	transition: background-color 0.25s, color 0.25s;
 }
 
 .section {
-	margin: auto;
+	margin: 1rem auto;
 	width: 50%;
 	border-bottom: solid #EEE 1px;
+}
+
+.class-name {}
+
+.code {}
+
+.in-text-link {}
+
+.footer {
+	padding: 1rem;
+	background-color: #555;
+	text-transform: lowercase;
+}
+
+.footer-content {
+	margin: 1rem auto;
+	width: 70%;
+	color: white;
+}
+
+.footer-link {
+	color: white;
+	font-weight: 400;
 }
 
 /*Portfolio*/

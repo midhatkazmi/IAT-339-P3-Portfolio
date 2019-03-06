@@ -3,23 +3,26 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Midhat Kazmi | Visual Designer</title>
+		<title>Midhat Kazmi / Style Guide</title>
 		<link rel="icon" href="img/favicon-mk.png">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/grids.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 	</head>
 	<body>
 		<header class="header">
 			<!-- <a href="index.html">
-				<img class="logomark" src="img/logo-mk.svg">
+				<img class="logo" src="img/logo-mk.svg">
 			</a> -->
 			<div class="header-container">
 				<div class="header-item">
-					<a href="index.html">
-						<h1 class="logotype">Midhat Kazmi</h1>
-					</a>
+					<h1 class="heading">
+						<a href="index.html">Midhat Kazmi</a>
+						/
+						<a href="styleguide.html">Style Guide</a>
+					</h1>
 				</div>
 				<div class="header-item">
 					<nav class="nav">
@@ -31,9 +34,31 @@
 				</div>
 			</div>
 		</header>
+		<header>
+			<!-- <a href="index.html" tabindex="-1">
+				<img class="logo" src="img/logo-mk.svg">
+			</a> -->
+			<div class="header-container">
+				<div class="header-item">
+					<h1 class="heading">
+						<a href="index.html" tabindex="-1">Midhat Kazmi</a>
+						/
+						<a href="styleguide.html" tabindex="-1">Style Guide</a>
+					</h1>
+				</div>
+				<div class="header-item">
+					<nav class="nav">
+						<a class="nav-link" href="index.html" tabindex="-1">Portfolio</a>
+						<a class="nav-link" href="about.html" tabindex="-1">About</a>
+						<a class="nav-link" href="contact.html" tabindex="-1">Contact</a>
+						<a class="nav-link" href="files/midhat-kazmi-resume.pdf" tabindex="-1" target="_blank">Resume</a>
+					</nav>
+				</div>
+			</div>
+		</header>
 		<main>
-			<a href="#">
-				<i class="material-icons button-scroll-to-top">arrow_upward</i>
+			<a class="button-scroll-to-top" href="#">
+				<i class="material-icons">arrow_upward</i>
 			</a>
 			<!-- <nav class="body-nav">
 				<a class="body-nav-link" href="#interactive-elements">Interactive Elements</a>
@@ -50,7 +75,10 @@
 				<h2>Interactive Elements</h2>
 					<h3>In-Text Link</h3>
 						<h4>Class</h4>
+							<code class="class-name">.in-text-link</code>
 						<h4>Code</h4>
+							<code class="code">
+							</code>
 						<h4>Element</h4>
 					<h3>Navigation Link</h3>
 					<h3>Button</h3>
@@ -63,6 +91,9 @@
 				<h2>Text Styling</h2>
 					<h3>Headings</h3>
 					<h3>Paragraph</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus augue. Nunc pulvinar quis orci placerat tincidunt. Donec vel pretium velit, nec dapibus mauris. Duis vehicula est sit amet mi finibus, ut tristique sapien aliquam. Donec lectus massa, luctus eget viverra in, ornare sed turpis. Mauris consequat lacinia fringilla. Aenean non odio nec neque bibendum feugiat vel et libero. Donec varius ut mauris vel dignissim. Nam vel consequat odio, sed pulvinar enim.
+						</p>
 					<h3>Ordered List</h3>
 			</section>
 			<section id="combined-elements" class="section">
@@ -77,28 +108,41 @@
 			<section id="citations" class="section">
 				<h2>Citations</h2>
 					<ul>
-						<li>
+						<!-- <li>
 							Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans" target="_blank">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
 						</li>
 						<li>
 							Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#" target="_blank">URL</a>.
-						</li>
+						</li> -->
 						<li>
 							Kazmi, Midhat. Coder and designer. 2018. <strong>Portfolio [Website]</strong>. Retrieved from <a href="http://www.midhatkazmi.me/" target="_blank">http://www.midhatkazmi.me/</a>
 						</li>
 						<li>
 							Google. Creator. (n.d.). <strong>Material Icons [Font]</strong>. Retrieved from <a href="https://material.io/tools/icons/">https://material.io/tools/icons/</a>
 						</li>
+						<li>
+							Ravichandran, Pria. Creator. (n.d.). <strong>Catamaran [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Catamaran" target="_blank">https://fonts.google.com/specimen/Catamaran</a>
+						</li>
 					</ul>
 			</section>
 		</main>
-		<footer>
-			<a href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
-			<a href="styleguide.html">Style Guide</a>
-			<a href="styleguide.html#citations">Citations</a>
-			<a href="https://github.com/midhatkazmi/IAT-339-P3-Portfolio.git" target="_blank">Github Repository</a>
-			<br>
-			&copy; 2019 | Midhat Kazmi
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-container">
+					<div class="footer-item">
+						&copy; 2019 / Midhat Kazmi
+					</div>
+					<div class="footer-item">
+						<a class="footer-link" href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
+						/
+						<a class="footer-link" href="styleguide.html">Style Guide</a>
+						/
+						<a class="footer-link" href="styleguide.html#citations">Citations</a>
+						/
+						<a class="footer-link" href="https://github.com/midhatkazmi/IAT-339-P3-Portfolio.git" target="_blank">Github Repository</a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
