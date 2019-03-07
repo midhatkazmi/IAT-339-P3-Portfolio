@@ -14,3 +14,28 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+/*Index*/
+
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 70%;
+}
+
+.project-item {
+	width: 50%;
+}
+
+@media (max-width: 976px) {
+	.project-item {
+		width: 100%;
+	}
+}
+
+/*About*/
+
+/*Contact*/
+
+/*Project*/

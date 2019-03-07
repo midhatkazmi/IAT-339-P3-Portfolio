@@ -11,6 +11,10 @@ a {
 	font-weight: 600;
 }
 
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -25,6 +29,7 @@ a {
 .logo:hover, .logo:focus, .logo:active {}
 
 .heading {
+	display: inline-block;
 	margin: 1rem;
 	padding: 1rem;
 	font-size: 1rem;
@@ -64,8 +69,21 @@ a {
 .section {
 	margin: 1rem auto;
 	width: 50%;
-	border-bottom: solid #EEE 1px;
 }
+
+.subheading {
+	/*display: inline-block;*/
+	/*margin: 0;*/
+	/*padding: 0.5rem;*/
+	/*background-color: red;*/
+	/*color: white;*/
+	/*text-transform: lowercase;*/
+	/*font-size: 1.25rem;*/
+}
+
+.title {}
+
+.subtitle {}
 
 .class-name {}
 
@@ -92,9 +110,39 @@ a {
 
 /*Portfolio*/
 
-.current-page {}
+.current-page {
+	text-decoration: underline;
+}
+
+.introduction {
+	margin: 0;
+	padding: 5% 15%;
+	background-color: #EEE;
+	font-size: 3rem;
+	line-height: 4rem;
+}
+
+.introduction .in-text-link {
+	text-decoration: underline;
+	font-weight: 400;
+}
+
+.project-link {
+	margin: 1rem;
+}
+
+.image {
+	width: 100%;
+}
 
 /*About*/
+
+.about-image {
+	margin: 1rem auto;
+	width: 25%;
+}
+
+.text {}
 
 /*Contact*/
 
