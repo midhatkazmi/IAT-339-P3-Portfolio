@@ -2,7 +2,7 @@
 
 body {
 	color: #555;
-	font-family: 'Catamaran', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -12,19 +12,25 @@ a {
 }
 
 a:hover, a:focus, a:active {
-	text-decoration: underline;
+	border-bottom: solid 1px #555;
 }
 
 .header {
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
 	background-color: white;
 	border-bottom: solid 1px #EEE;
-	text-transform: lowercase;
 }
 
-.logo {}
+.header-spacer {
+	position: static;
+}
+
+.logo {
+	height: 2rem;
+}
 
 .logo:hover, .logo:focus, .logo:active {}
 
@@ -32,18 +38,35 @@ a:hover, a:focus, a:active {
 	display: inline-block;
 	margin: 1rem;
 	padding: 1rem;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
-	font-weight: 600;
+	letter-spacing: 1px;
 }
 
 .heading:hover, .heading:focus, .heading:active {}
 
+.heading .name {
+	transition: margin-left 0.5s;
+}
+
+.heading .name:hover, .heading .name:focus, .heading .name:active {
+	margin-left: 3rem;
+	transition: margin-left 0.5s;
+}
+
+.heading .occupation {
+	font-weight: 400;
+}
+
 .nav {
 	margin: 1rem;
+	font-family: 'Roboto', sans-serif;
 }
 
 .nav-link {
-	padding: 1rem;
+	margin: 1rem;
+	font-weight: 400;
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active {}
@@ -60,26 +83,18 @@ a:hover, a:focus, a:active {
 	transition: background-color 0.25s, color 0.25s;
 }
 
-.button-scroll-to-top .material-icons:hover, .button-scroll-to-top .material-icons:focus {
+.button-scroll-to-top .material-icons:hover, .button-scroll-to-top .material-icons:focus, .button-scroll-to-top .material-icons:active {
 	background-color: red;
 	color: white;
 	transition: background-color 0.25s, color 0.25s;
 }
 
 .section {
-	margin: 1rem auto;
+	margin: auto;
 	width: 50%;
 }
 
-.subheading {
-	/*display: inline-block;*/
-	/*margin: 0;*/
-	/*padding: 0.5rem;*/
-	/*background-color: red;*/
-	/*color: white;*/
-	/*text-transform: lowercase;*/
-	/*font-size: 1.25rem;*/
-}
+.subheading {}
 
 .title {}
 
@@ -92,39 +107,29 @@ a:hover, a:focus, a:active {
 .in-text-link {}
 
 .footer {
-	padding: 1rem;
-	background-color: #555;
-	text-transform: lowercase;
-}
-
-.footer-content {
-	margin: 1rem auto;
+	margin: 0 auto;
+	padding: 2rem 0;
 	width: 70%;
-	color: white;
+	border-top: solid 1px #EEE;
+	font-family: 'Roboto', sans-serif;
 }
 
 .footer-link {
-	color: white;
 	font-weight: 400;
+}
+
+.footer-link:hover, .footer-link:focus, .footer-link:active {
+	border-bottom: solid 1px #555;
 }
 
 /*Portfolio*/
 
-.current-page {
-	text-decoration: underline;
-}
-
-.introduction {
-	margin: 0;
-	padding: 5% 15%;
-	background-color: #EEE;
-	font-size: 3rem;
-	line-height: 4rem;
-}
-
-.introduction .in-text-link {
-	text-decoration: underline;
-	font-weight: 400;
+.heading-sentence {
+	margin: 5% auto;
+	width: 70%;
+	text-align: center;
+	font-size: 1.25rem;
+	line-height: 1.5em;
 }
 
 .project-link {
