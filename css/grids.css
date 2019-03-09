@@ -17,6 +17,11 @@
 
 /*Index*/
 
+.divider-container {
+	margin: auto;
+	width: 70%;
+}
+
 .project-container {
 	display: flex;
 	flex-wrap: wrap;

@@ -29,6 +29,10 @@ a:hover, a:focus, a:active {
 }
 
 .logo {
+	position: absolute;
+	top: 1.5rem;
+	left: 1rem;
+	/*width: 5rem;*/
 	height: 2rem;
 }
 
@@ -46,16 +50,16 @@ a:hover, a:focus, a:active {
 
 .heading:hover, .heading:focus, .heading:active {}
 
-.heading .name {
+.name {
 	transition: margin-left 0.5s;
 }
 
-.heading .name:hover, .heading .name:focus, .heading .name:active {
-	margin-left: 3rem;
+.name:hover, .name:focus, .name:active {
+	/*margin-left: 7rem;*/
 	transition: margin-left 0.5s;
 }
 
-.heading .occupation {
+.occupation {
 	font-weight: 400;
 }
 
@@ -94,7 +98,17 @@ a:hover, a:focus, a:active {
 	width: 50%;
 }
 
-.subheading {}
+.subheading {
+	display: inline-block;
+	margin: 0;
+	padding: 0.5rem;
+	background-color: red;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 300;
+}
 
 .title {}
 
@@ -107,10 +121,9 @@ a:hover, a:focus, a:active {
 .in-text-link {}
 
 .footer {
-	margin: 0 auto;
-	padding: 2rem 0;
+	margin: 1rem auto;
+	padding: 1rem;
 	width: 70%;
-	border-top: solid 1px #EEE;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -125,11 +138,20 @@ a:hover, a:focus, a:active {
 /*Portfolio*/
 
 .heading-sentence {
-	margin: 5% auto;
+	margin: 2rem auto 1rem auto;
+	padding: 1rem;
 	width: 70%;
 	text-align: center;
-	font-size: 1.25rem;
+}
+
+.text {
+	margin: 1rem 0;
 	line-height: 1.5em;
+}
+
+.divider {
+	margin: 0 1rem;
+	border: solid 1px #EEE;
 }
 
 .project-link {
@@ -146,8 +168,6 @@ a:hover, a:focus, a:active {
 	margin: 1rem auto;
 	width: 25%;
 }
-
-.text {}
 
 /*Contact*/
 
