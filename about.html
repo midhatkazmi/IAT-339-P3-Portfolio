@@ -10,31 +10,34 @@
 		<link rel="stylesheet" type="text/css" href="css/grids.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	</head>
 	<body>
 		<header class="header">
-			<!-- <a href="index.html">
+			<a href="index.html">
 				<img class="logo" src="img/logo-mk.svg">
-			</a> -->
+			</a>
 			<div class="header-container">
 				<div class="header-item">
 					<h1 class="heading">
-						<a href="index.html">Midhat Kazmi</a>
+						<a class="heading-name" href="index.html">
+							Midhat Kazmi<div class="logo-hider"></div></a>
 						/
-						<a href="about.html">About</a>
+						<a class="heading-occupation" href="index.html">About</a>
 					</h1>
 				</div>
 				<div class="header-item">
 					<nav class="nav">
-						<a class="nav-link" href="index.html#portfolio">Portfolio</a>
-						<a class="nav-link current-page" href="about.html">About</a>
+						<a class="nav-link" href="index.html">Portfolio</a>
+						<a class="nav-link" href="about.html">About</a>
 						<a class="nav-link" href="contact.html">Contact</a>
 						<a class="nav-link" href="files/midhat-kazmi-resume.pdf" target="_blank">Resume</a>
 					</nav>
 				</div>
 			</div>
 		</header>
-		<header>
+		<header class="header header-spacer">
 			<!-- <a href="index.html" tabindex="-1">
 				<img class="logo" src="img/logo-mk.svg">
 			</a> -->
@@ -48,8 +51,7 @@
 				</div>
 				<div class="header-item">
 					<nav class="nav">
-						<a class="nav-link" href="index.html#portfolio" tabindex="-1">Portfolio</a>
-						<a class="nav-link current-page" href="about.html" tabindex="-1">About</a>
+						<a class="nav-link" href="about.html" tabindex="-1">About</a>
 						<a class="nav-link" href="contact.html" tabindex="-1">Contact</a>
 						<a class="nav-link" href="files/midhat-kazmi-resume.pdf" tabindex="-1" target="_blank">Resume</a>
 					</nav>
@@ -71,7 +73,7 @@
 					I am majoring in the <a class="in-text-link" href="https://www.sfu.ca/siat.html" target="_blank">School of Interactive Arts and Technology</a> with a concentration in Design at <a class="in-text-link" href="https://www.sfu.ca/" target="_blank">Simon Fraser University</a>; I will be graduating in the Spring of 2020.
 				</p>
 				<p class="text">
-					My focus is learning branding and identity, as well as UX/UI and web design. The conception of my interest in design was sports team logos, where I first started out.
+					My focus is learning branding and identity, as well as user experience and user interface and web design. The conception of my interest in design was sports team logos, where I first started out.
 				</p>
 				<p class="text">
 					On the left is the first instance of design I have on my hard drive—a logo I designed for my high school class in 2013. *shudders*
@@ -79,23 +81,36 @@
 				<p class="text">
 					On the right is my most recent logo for Baabul Ilm Education Society.
 				</p>
+				<div class="button-container">
+					<div class="button-item">
+						<a href="mailto:midhatk@sfu.ca">
+							<button class="about-button">Email Me</button>
+						</a>
+					</div>
+					<div class="button-item">
+						<a href="files/midhat-kazmi-resume.pdf" target="_blank">
+							<button class="about-button">View My Resume</button>
+						</a>
+					</div>
+				</div>
 			</section>
 		</main>
+		<div class="divider-container">
+			<hr class="divider">
+		</div>
 		<footer class="footer">
-			<div class="footer-content">
-				<div class="footer-container">
-					<div class="footer-item">
-						&copy; 2019 / Midhat Kazmi
-					</div>
-					<div class="footer-item">
-						<a class="footer-link" href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
-						/
-						<a class="footer-link" href="styleguide.html">Style Guide</a>
-						/
-						<a class="footer-link" href="styleguide.html#citations">Citations</a>
-						/
-						<a class="footer-link" href="https://github.com/midhatkazmi/IAT-339-P3-Portfolio.git" target="_blank">Github Repository</a>
-					</div>
+			<div class="footer-container">
+				<div class="footer-item">
+					&copy; 2019 / Midhat Kazmi
+				</div>
+				<div class="footer-item">
+					<a class="footer-link" href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
+					/
+					<a class="footer-link" href="styleguide.html">Style Guide</a>
+					/
+					<a class="footer-link" href="styleguide.html#citations">Citations</a>
+					/
+					<a class="footer-link" href="https://github.com/midhatkazmi/IAT-339-P3-Portfolio.git" target="_blank">Github Repository</a>
 				</div>
 			</div>
 		</footer>

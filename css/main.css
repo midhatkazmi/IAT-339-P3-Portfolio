@@ -1,4 +1,4 @@
-/*Style Guide*/
+/*Index*/
 
 body {
 	color: #555;
@@ -13,6 +13,7 @@ a {
 
 a:hover, a:focus, a:active {
 	border-bottom: solid 1px #555;
+	color: red;
 }
 
 .header {
@@ -20,8 +21,9 @@ a:hover, a:focus, a:active {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: white;
 	border-bottom: solid 1px #EEE;
+	background-color: white;
+	z-index: 1;
 }
 
 .header-spacer {
@@ -30,13 +32,11 @@ a:hover, a:focus, a:active {
 
 .logo {
 	position: absolute;
-	top: 1.5rem;
+	top: 1rem;
 	left: 1rem;
-	/*width: 5rem;*/
-	height: 2rem;
+	height: 3rem;
+	z-index: -1;
 }
-
-.logo:hover, .logo:focus, .logo:active {}
 
 .heading {
 	display: inline-block;
@@ -48,18 +48,32 @@ a:hover, a:focus, a:active {
 	letter-spacing: 1px;
 }
 
-.heading:hover, .heading:focus, .heading:active {}
-
-.name {
+.heading-name {
 	transition: margin-left 0.5s;
 }
 
-.name:hover, .name:focus, .name:active {
-	/*margin-left: 7rem;*/
+.heading-name:hover, .heading-name:focus, .heading-name:active {
+	margin-left: 7rem;
 	transition: margin-left 0.5s;
 }
 
-.occupation {
+.heading-name:hover .logo-hider, .heading-name:focus .logo-hider, .heading-name:active .logo-hider {
+	margin-left: 8rem;
+	transition: margin-left 0.5s;
+}
+
+.logo-hider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8rem;
+	height: 5rem;
+	background-color: white;
+	transition: margin-left 0.5s;
+	z-index: -1;
+}
+
+.heading-occupation {
 	font-weight: 400;
 }
 
@@ -72,8 +86,6 @@ a:hover, a:focus, a:active {
 	margin: 1rem;
 	font-weight: 400;
 }
-
-.nav-link:hover, .nav-link:focus, .nav-link:active {}
 
 .button-scroll-to-top .material-icons {
 	position: fixed;
@@ -93,9 +105,11 @@ a:hover, a:focus, a:active {
 	transition: background-color 0.25s, color 0.25s;
 }
 
-.section {
-	margin: auto;
-	width: 50%;
+.heading-sentence {
+	margin: 1rem auto 0 auto;
+	padding: 1rem;
+	width: 70%;
+	text-align: center;
 }
 
 .subheading {
@@ -110,15 +124,73 @@ a:hover, a:focus, a:active {
 	font-weight: 300;
 }
 
-.title {}
+.text {
+	margin: 1rem 0;
+	line-height: 1.5em;
+}
 
-.subtitle {}
+.divider {
+	margin: 0 1rem;
+	border: solid 1px #EEE;
+}
 
-.class-name {}
+.project-link:hover .image, .project-link:focus .image {
+	transform: scale(1.1);
+	filter: none;
+	transition: transform 0.5s, filter 0.5s;
+}
 
-.code {}
+.project-link:active .image {
+	filter: blur(5px);
+}
 
-.in-text-link {}
+.project-link:hover .project-type, .project-link:focus .project-type, .project-link:active .project-type {
+	background-color: red;
+	color: white;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.project {
+	position: relative;
+	margin: 1rem;
+	color: #555;
+}
+
+.image-container {
+	overflow: hidden;
+}
+
+.image-container .image {
+	filter: grayscale(100%);
+	transition: transform 0.5s, filter 0.5s;
+}
+
+.image {
+	width: 100%;
+}
+
+.project-info {
+	font-family: 'Roboto', sans-serif;
+}
+
+.project-name {
+	display: inline-block;
+	margin-top: 0.5rem;
+	text-transform: uppercase;
+	font-weight: 500;	
+}
+
+.project-type {
+	display: inline-block;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	background-color: #EEE;
+	text-transform: lowercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	transition: background-color 0.5s, color 0.5s;
+}
 
 .footer {
 	margin: 1rem auto;
@@ -131,44 +203,42 @@ a:hover, a:focus, a:active {
 	font-weight: 400;
 }
 
-.footer-link:hover, .footer-link:focus, .footer-link:active {
-	border-bottom: solid 1px #555;
-}
-
-/*Portfolio*/
-
-.heading-sentence {
-	margin: 2rem auto 1rem auto;
-	padding: 1rem;
-	width: 70%;
-	text-align: center;
-}
-
-.text {
-	margin: 1rem 0;
-	line-height: 1.5em;
-}
-
-.divider {
-	margin: 0 1rem;
-	border: solid 1px #EEE;
-}
-
-.project-link {
-	margin: 1rem;
-}
-
-.image {
-	width: 100%;
-}
-
 /*About*/
 
 .about-image {
-	margin: 1rem auto;
+	margin: 2rem auto 0 auto;
 	width: 25%;
+}
+
+.section {
+	margin: 0 auto;
+	padding: 1rem;
+	width: 50%;
+}
+
+.about-button {
+	padding: 1rem;
+	width: 100%;
+	background-color: #EEE;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	transition: background-color 0.25s, color 0.25s;
+}
+
+.about-button:hover, .about-button:focus, .about-button:active {
+	background-color: red;
+	color: white;
+	transition: background-color 0.25s, color 0.25s;
 }
 
 /*Contact*/
 
+.contact-spacer {
+	height: 50vh;
+}
+
 /*Project*/
+
+/*Style Guide*/
