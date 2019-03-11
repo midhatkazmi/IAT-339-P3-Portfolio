@@ -10,6 +10,11 @@
 	align-items: center;
 }
 
+.heading-container {
+	display: flex;
+	align-items: center;
+}
+
 .footer-container {
 	display: flex;
 	justify-content: space-between;
@@ -41,12 +46,20 @@
 
 /*About*/
 
+.section-about {
+	margin-top: -1rem;
+	margin-bottom: -1rem;
+}
+
 .button-container {
 	display: flex;
+	width: 50%;
+	margin: auto;
 }
 
 .button-item {
 	flex: 1;
+	margin: 0 1rem 2rem 1rem;
 }
 
 /*Contact*/
