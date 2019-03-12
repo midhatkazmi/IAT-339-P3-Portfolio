@@ -77,6 +77,7 @@
 
 .colours-container {
 	display: flex;
+	margin: 1rem;
 }
 
 .colours-item {
