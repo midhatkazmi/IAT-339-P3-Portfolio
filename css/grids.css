@@ -24,6 +24,9 @@
 
 .divider-container {
 	margin: auto;
+}
+
+.divider-container.wide {
 	width: 70%;
 }
 
@@ -67,3 +70,7 @@
 /*Project*/
 
 /*Style Guide*/
+
+.divider-container.narrow {
+	width: 50%;
+}

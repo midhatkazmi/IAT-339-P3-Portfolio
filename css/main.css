@@ -140,7 +140,8 @@ a:hover, a:focus, a:active {
 
 .subheading {
 	display: inline-block;
-	margin: 0;
+	/*margin: 0;*/
+	margin: 1rem 0;
 	padding: 0.5rem;
 	background-color: red;
 	color: white;
@@ -171,9 +172,14 @@ a:hover, a:focus, a:active {
 }
 
 .project-link:hover .project-type, .project-link:focus .project-type, .project-link:active .project-type {
-	background-color: red;
-	color: white;
-	transition: background-color 0.5s, color 0.5s;
+	/*background-color: red;*/
+	/*color: white;*/
+	color: red;
+	/*transition: background-color 0.5s, color 0.5s;*/
+}
+
+.project-link:hover .project-name, .project-link:focus .project-name, .project-link:active .project-name {
+	border-bottom: solid 1px #555;
 }
 
 .project {
@@ -196,26 +202,30 @@ a:hover, a:focus, a:active {
 }
 
 .project-info {
-	font-family: 'Roboto', sans-serif;
-}
-
-.project-name {
-	display: inline-block;
 	margin-top: 0.5rem;
-	text-transform: uppercase;
-	font-weight: 500;	
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.25em;
 }
 
 .project-type {
-	display: inline-block;
-	margin-top: 0.5rem;
-	padding: 0.5rem;
-	background-color: #EEE;
-	text-transform: lowercase;
-	font-family: 'Open Sans', sans-serif;
+	/*display: inline-block;*/
+	/*padding: 0.5rem;*/
+	/*background-color: #EEE;*/
+	/*color: red;*/
+	/*text-transform: lowercase;*/
+	text-transform: uppercase;
+	/*font-family: 'Open Sans', sans-serif;*/
 	font-size: 0.75rem;
 	font-weight: 400;
-	transition: background-color 0.5s, color 0.5s;
+	/*transition: background-color 0.5s, color 0.5s;*/
+}
+
+.project-name {
+	/*display: inline-block;*/
+	/*margin-top: 0.5rem;*/
+	text-transform: uppercase;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-weight: 500;	
 }
 
 .footer {
@@ -234,6 +244,10 @@ a:hover, a:focus, a:active {
 .about-image {
 	margin: 2rem auto 0 auto;
 	width: 25%;
+}
+
+.about-image .image {
+	border-radius: 100%;
 }
 
 .section {
@@ -280,3 +294,54 @@ a:hover, a:focus, a:active {
 /*Project*/
 
 /*Style Guide*/
+
+.subtitle {
+	margin: 1rem 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.code {
+	display: block;
+	margin: 1rem;
+	padding: 0.25rem 0.5rem;
+	border-left: solid 0.25rem #EEE;
+	line-height: 1.5em;
+	transition: margin-left 0.25s, border-color 0.25s;
+}
+
+.code:hover, .code:focus, .class-name:active {
+	margin-left: 2rem;
+	border-color: #555;
+	transition: margin-left 0.25s, border-color 0.25s;
+}
+
+.element {
+	/*display: inline-block;*/
+	margin: 1rem;
+	/*padding: 1rem;*/
+	/*box-shadow: 0 1px 1px 1px #EEE;*/
+}
+
+.nav.demo, .nav-link.demo {
+	margin: 0;
+}
+
+.button-scroll-to-top:hover, .button-scroll-to-top:focus, .button-scroll-to-top:active {
+	border: none;
+}
+
+.button-scroll-to-top .material-icons.demo {
+	position: static;
+}
+
+.unordered-list {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	list-style: none;
+}
+
+.list-item {
+	margin-bottom: 1rem;
+}

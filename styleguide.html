@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="css/grids.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	</head>
 	<body>
 		<header class="header">
@@ -18,15 +20,30 @@
 			</a> -->
 			<div class="header-container">
 				<div class="header-item">
-					<h1 class="heading">
-						<a href="index.html">Midhat Kazmi</a>
+					<div class="heading-container">
+						<div class="heading-item">
+							<a class="logo-link" href="index.html">
+								<img class="logo" src="img/logo-mk.svg">
+							</a>
+						</div>
+						<div class="heading-item">
+							<h1 class="heading">
+								<a class="heading-name" href="index.html">Midhat Kazmi</a>
+								/
+								<a class="heading-occupation" href="styleguide.html">Style Guide</a>
+							</h1>
+						</div>
+					</div>
+					<!-- <h1 class="heading">
+						<a class="heading-name" href="index.html">
+							Midhat Kazmi<div class="logo-hider"></div></a>
 						/
-						<a href="styleguide.html">Style Guide</a>
-					</h1>
+						<a class="heading-occupation" href="styleguide.html">Style Guide</a>
+					</h1> -->
 				</div>
 				<div class="header-item">
 					<nav class="nav">
-						<a class="nav-link" href="index.html#portfolio">Portfolio</a>
+						<a class="nav-link" href="index.html">Portfolio</a>
 						<a class="nav-link" href="about.html">About</a>
 						<a class="nav-link" href="contact.html">Contact</a>
 						<a class="nav-link" href="files/midhat-kazmi-resume.pdf" target="_blank">Resume</a>
@@ -34,24 +51,39 @@
 				</div>
 			</div>
 		</header>
-		<header>
+		<header class="header header-spacer">
 			<!-- <a href="index.html" tabindex="-1">
 				<img class="logo" src="img/logo-mk.svg">
 			</a> -->
 			<div class="header-container">
 				<div class="header-item">
-					<h1 class="heading">
-						<a href="index.html" tabindex="-1">Midhat Kazmi</a>
+					<div class="heading-container">
+						<div class="heading-item">
+							<a class="logo-link" href="index.html" tabindex="-1">
+								<img class="logo" src="img/logo-mk.svg">
+							</a>
+						</div>
+						<div class="heading-item">
+							<h1 class="heading">
+								<a class="heading-name" href="index.html" tabindex="-1">Midhat Kazmi</a>
+								/
+								<a class="heading-occupation" href="styleguide.html" tabindex="-1">Style Guide</a>
+							</h1>
+						</div>
+					</div>
+					<!-- <h1 class="heading">
+						<a class="heading-name" href="index.html" tabindex="-1">
+							Midhat Kazmi<div class="logo-hider"></div></a>
 						/
-						<a href="styleguide.html" tabindex="-1">Style Guide</a>
-					</h1>
+						<a class="heading-occupation" href="styleguide.html" tabindex="-1">Style Guide</a>
+					</h1> -->
 				</div>
 				<div class="header-item">
 					<nav class="nav">
-						<a class="nav-link" href="index.html#portfolio" tabindex="-1">Portfolio</a>
+						<a class="nav-link" href="index.html" tabindex="-1">Portfolio</a>
 						<a class="nav-link" href="about.html" tabindex="-1">About</a>
 						<a class="nav-link" href="contact.html" tabindex="-1">Contact</a>
-						<a class="nav-link" href="files/midhat-kazmi-resume.pdf" tabindex="-1" target="_blank">Resume</a>
+						<a class="nav-link" href="files/midhat-kazmi-resume.pdf" target="_blank" tabindex="-1">Resume</a>
 					</nav>
 				</div>
 			</div>
@@ -73,74 +105,272 @@
 			</nav> -->
 			<section id="interactive-elements" class="section">
 				<h2 class="subheading">Interactive Elements</h2>
+					<br>
 					<h3 class="title">In-Text Link</h3>
-						<h4 class="subtitle">Class</h4>
-							<code class="class-name">.in-text-link</code>
-						<h4 class="subtitle">Code</h4>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">.in-text-link</code>
+						<h4 class="subtitle">Code:</h4>
 							<code class="code">
+								&lt;p class=&quot;text&quot;&gt;<br>
+								This is an &lt;a class=&quot;in-text-link&quot; href=&quot;...&quot;&gt;in-text-link&lt;/a&gt;.<br>
+								&lt;/p&gt;
 							</code>
-						<h4 class="subtitle">Element</h4>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">
+									This is an <a class="in-text-link" href="#">in-text-link</a>.
+								</p>
+							</div>
 					<h3 class="title">Navigation Link</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.nav, .nav-link
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;nav class=&quot;nav&quot;&gt;<br>
+								&lt;a class=&quot;nav-link&quot; href=&quot;...&quot;&gt;Navigation Link&lt;/a&gt;<br>
+								&lt;/nav&gt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<nav class="nav demo">
+									<a class="nav-link demo" href="#">Navigation Link</a>
+								</nav>
+							</div>
 					<h3 class="title">Button</h3>
-					<h3 class="title">Label</h3>
-					<h3 class="title">Text Input Field</h3>
-					<h3 class="title">Radio Button</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.button-scroll-to-top, .material-icons<br>
+							</code>
+							<code class="code">
+								.about-button
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;a class=&quot;button-scroll-to-top&quot; href=&quot;...&quot;&gt;<br>
+								&lt;i class=&quot;material-icons demo&quot;&gt;arrow_upward&lt;/i&gt;<br>
+								&lt;/a&gt;
+							</code>
+							<code class="code">
+								&lt;a href=&quot;...&quot;&gt;<br>
+								&lt;button class=&quot;about-button&quot;&gt;Button&lt;/button&gt;<br>
+								&lt;/a&gt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<a class="button-scroll-to-top" href="#">
+									<i class="material-icons demo">arrow_upward</i>
+								</a>
+							</div>
+							<div class="element">
+								<a href="#">
+									<button class="about-button">Button</button>
+								</a>
+							</div>
+					<!-- <h3 class="title">Label</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div> -->
+					<!-- <h3 class="title">Text Input Field</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div> -->
+					<!-- <h3 class="title">Radio Button</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div> -->
 					<h3 class="title">Image Link</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.project-link, .image-container, .image
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;a class=&quot;project-link&quot; href=&quot;...&quot;&gt;<br>
+								&lt;div class=&quot;image-container&quot;&gt;<br>
+								&lt;img class=&quot;image&quot; src=&quot;...&quot;&gt;<br>
+								&lt;/div&gt;<br>
+								&lt;/a&gt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<a class="project-link" href="#">
+									<div class="image-container">
+										<img class="image" src="img/thumbnail-baabulilm.jpg">
+									</div>
+								</a>
+							</div>
 			</section>
+			<div class="divider-container narrow">
+				<hr class="divider">
+			</div>
 			<section id="text-styling" class="section">
 				<h2 class="subheading">Text Styling</h2>
+					<br>
 					<h3 class="title">Headings</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
 					<h3 class="title">Paragraph</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus augue. Nunc pulvinar quis orci placerat tincidunt. Donec vel pretium velit, nec dapibus mauris. Duis vehicula est sit amet mi finibus, ut tristique sapien aliquam. Donec lectus massa, luctus eget viverra in, ornare sed turpis. Mauris consequat lacinia fringilla. Aenean non odio nec neque bibendum feugiat vel et libero. Donec varius ut mauris vel dignissim. Nam vel consequat odio, sed pulvinar enim.
-						</p>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
 					<h3 class="title">Ordered List</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
 			</section>
+			<div class="divider-container narrow">
+				<hr class="divider">
+			</div>
 			<section id="combined-elements" class="section">
 				<h2 class="subheading">Combined Elements</h2>
+					<br>
 					<h3 class="title">Header</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
 			</section>
+			<div class="divider-container narrow">
+				<hr class="divider">
+			</div>
 			<section id="brand-components" class="section">
 				<h2 class="subheading">Brand Components</h2>
+					<br>
 					<h3 class="title">Fonts</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
 					<h3 class="title">Colours</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
 			</section>
+			<div class="divider-container narrow">
+				<hr class="divider">
+			</div>
 			<section id="citations" class="section">
 				<h2 class="subheading">Citations</h2>
-					<ul>
-						<!-- <li>
+					<ul class="unordered-list">
+						<!-- <li class="list-item">
 							Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans" target="_blank">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
 						</li>
-						<li>
+						<li class="list-item">
 							Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#" target="_blank">URL</a>.
 						</li> -->
-						<li>
+						<li class="list-item">
 							Kazmi, Midhat. Coder and designer. 2018. <strong>Portfolio [Website]</strong>. Retrieved from <a href="http://www.midhatkazmi.me/" target="_blank">http://www.midhatkazmi.me/</a>
 						</li>
-						<li>
-							Google. Creator. (n.d.). <strong>Material Icons [Font]</strong>. Retrieved from <a href="https://material.io/tools/icons/">https://material.io/tools/icons/</a>
+						<li class="list-item">
+							Google. Designer. (n.d.). <strong>Material Icons [Font]</strong>. Retrieved from <a href="https://material.io/tools/icons/">https://material.io/tools/icons/</a>
 						</li>
-						<li>
-							Ravichandran, Pria. Creator. (n.d.). <strong>Catamaran [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Catamaran" target="_blank">https://fonts.google.com/specimen/Catamaran</a>
+						<li class="list-item">
+							Robertson, Christian. Designer. 2011. <strong>Roboto [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Roboto" target="_blank">https://fonts.google.com/specimen/Roboto</a>
+						</li>
+						<li class="list-item">
+							Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">https://fonts.google.com/specimen/Open+Sans</a>
 						</li>
 					</ul>
 			</section>
 		</main>
+		<div class="divider-container wide">
+			<hr class="divider">
+		</div>
 		<footer class="footer">
-			<div class="footer-content">
-				<div class="footer-container">
-					<div class="footer-item">
-						&copy; 2019 / Midhat Kazmi
-					</div>
-					<div class="footer-item">
-						<a class="footer-link" href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
-						/
-						<a class="footer-link" href="styleguide.html">Style Guide</a>
-						/
-						<a class="footer-link" href="styleguide.html#citations">Citations</a>
-						/
-						<a class="footer-link" href="https://github.com/midhatkazmi/IAT-339-P3-Portfolio.git" target="_blank">Github Repository</a>
-					</div>
+			<div class="footer-container">
+				<div class="footer-item">
+					&copy; 2019 / Midhat Kazmi
+				</div>
+				<div class="footer-item">
+					<a class="footer-link" href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
+					/
+					<a class="footer-link" href="styleguide.html">Style Guide</a>
+					/
+					<a class="footer-link" href="styleguide.html#citations">Citations</a>
+					/
+					<a class="footer-link" href="https://github.com/midhatkazmi/IAT-339-P3-Portfolio.git" target="_blank">Github Repository</a>
 				</div>
 			</div>
 		</footer>
