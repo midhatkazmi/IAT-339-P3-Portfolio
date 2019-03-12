@@ -142,8 +142,6 @@
 						<h4 class="subtitle">Class:</h4>
 							<code class="code">
 								.button-scroll-to-top, .material-icons<br>
-							</code>
-							<code class="code">
 								.about-button
 							</code>
 						<h4 class="subtitle">Code:</h4>
@@ -238,30 +236,42 @@
 					<h3 class="title">Headings</h3>
 						<h4 class="subtitle">Class:</h4>
 							<code class="code">
-								.
+								.heading,
+								.subheading,
+								.title,
+								.subtitle
 							</code>
 						<h4 class="subtitle">Code:</h4>
 							<code class="code">
-								&lt;
+								&lt;h1 class=&quot;heading&quot;&gt;Heading&lt;/h1&gt;<br>
+								&lt;h2 class=&quot;subheading&quot;&gt;Subheading&lt;/h2&gt;<br>
+								&lt;h3 class=&quot;title&quot;&gt;Title&lt;/h3&gt;<br>
+								&lt;h4 class=&quot;subtitle&quot;&gt;Subtitle&lt;/h4&gt;
 							</code>
 						<h4 class="subtitle">Element:</h4>
 							<div class="element">
-								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<h1 class="heading demo">Heading</h1>
+								<br>
+								<h2 class="subheading">Subheading</h2>
+								<br>
+								<h3 class="title">Title</h3>
+								<br>
+								<h4 class="subtitle">Subtitle</h4>
 							</div>
 					<h3 class="title">Paragraph</h3>
 						<h4 class="subtitle">Class:</h4>
 							<code class="code">
-								.
+								.text
 							</code>
 						<h4 class="subtitle">Code:</h4>
 							<code class="code">
-								&lt;
+								&lt;p class=&quot;text&quot;&gt;This is a paragraph.&lt;/p&gt;
 							</code>
 						<h4 class="subtitle">Element:</h4>
 							<div class="element">
-								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p class="text">This is a paragraph.</p>
 							</div>
-					<h3 class="title">Ordered List</h3>
+					<!-- <h3 class="title">Ordered List</h3>
 						<h4 class="subtitle">Class:</h4>
 							<code class="code">
 								.
@@ -273,6 +283,27 @@
 						<h4 class="subtitle">Element:</h4>
 							<div class="element">
 								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div> -->
+					<h3 class="title">Unordered List</h3>
+						<h4 class="subtitle">Class:</h4>
+							<code class="code">
+								.unordered-list, .list-item
+							</code>
+						<h4 class="subtitle">Code:</h4>
+							<code class="code">
+								&lt;ul class=&quot;unordered-list&quot;&gt;<br>
+								&lt;li class=&quot;list-item&quot;&gt;List item 1&lt;/li&gt;<br>
+								&lt;li class=&quot;list-item&quot;&gt;List item 2&lt;/li&gt;<br>
+								&lt;li class=&quot;list-item&quot;&gt;List item 3&lt;/li&gt;<br>
+								&lt;/ul&gt;
+							</code>
+						<h4 class="subtitle">Element:</h4>
+							<div class="element">
+								<ul class="unordered-list">
+									<li class="list-item">List item 1</li>
+									<li class="list-item">List item 2</li>
+									<li class="list-item">List item 3</li>
+								</ul>
 							</div>
 			</section>
 			<div class="divider-container narrow">
@@ -284,15 +315,66 @@
 					<h3 class="title">Header</h3>
 						<h4 class="subtitle">Class:</h4>
 							<code class="code">
-								.
+								.header, .logo-link, .logo, .heading, .heading-name, .heading-occupation, .nav, .nav-link
 							</code>
 						<h4 class="subtitle">Code:</h4>
 							<code class="code">
-								&lt;
+								&lt;header class=&quot;header&quot;&gt;<br>
+								&lt;a class=&quot;logo-link&quot; href=&quot;...&quot;&gt;<br>
+								&lt;img class=&quot;logo&quot; src=&quot;...&quot;&gt;<br>
+								&lt;/a&gt;<br>
+								&lt;h1 class=&quot;heading&quot;&gt;<br>
+								&lt;a class=&quot;heading-name&quot; href=&quot;...&quot;&gt;Midhat Kazmi&lt;/a&gt;<br>
+								/<br>
+								&lt;a class=&quot;heading-occupation&quot; href=&quot;...&quot;&gt;Style Guide&lt;/a&gt;<br>
+								&lt;/h1&gt;<br>
+								&lt;nav class=&quot;nav&quot;&gt;<br>
+								&lt;a class=&quot;nav-link&quot; href=&quot;...&quot;&gt;Portfolio&lt;/a&gt;<br>
+								&lt;a class=&quot;nav-link&quot; href=&quot;...&quot;&gt;About&lt;/a&gt;<br>
+								&lt;a class=&quot;nav-link&quot; href=&quot;...&quot;&gt;Contact&lt;/a&gt;<br>
+								&lt;a class=&quot;nav-link&quot; href=&quot;...&quot;&gt;Resume&lt;/a&gt;<br>
+								&lt;/nav&gt;<br>
+								&lt;/header&gt;
 							</code>
 						<h4 class="subtitle">Element:</h4>
 							<div class="element">
-								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<header class="header header-spacer">
+									<!-- <a href="index.html" tabindex="-1">
+										<img class="logo" src="img/logo-mk.svg">
+									</a> -->
+									<div class="header-container">
+										<div class="header-item">
+											<div class="heading-container">
+												<div class="heading-item">
+													<a class="logo-link" href="index.html" tabindex="-1">
+														<img class="logo" src="img/logo-mk.svg">
+													</a>
+												</div>
+												<div class="heading-item">
+													<h1 class="heading">
+														<a class="heading-name" href="index.html" tabindex="-1">Midhat Kazmi</a>
+														/
+														<a class="heading-occupation" href="styleguide.html" tabindex="-1">Style Guide</a>
+													</h1>
+												</div>
+											</div>
+											<!-- <h1 class="heading">
+												<a class="heading-name" href="index.html" tabindex="-1">
+													Midhat Kazmi<div class="logo-hider"></div></a>
+												/
+												<a class="heading-occupation" href="styleguide.html" tabindex="-1">Style Guide</a>
+											</h1> -->
+										</div>
+										<div class="header-item">
+											<nav class="nav">
+												<a class="nav-link" href="index.html" tabindex="-1">Portfolio</a>
+												<a class="nav-link" href="about.html" tabindex="-1">About</a>
+												<a class="nav-link" href="contact.html" tabindex="-1">Contact</a>
+												<a class="nav-link" href="files/midhat-kazmi-resume.pdf" target="_blank" tabindex="-1">Resume</a>
+											</nav>
+										</div>
+									</div>
+								</header>
 							</div>
 			</section>
 			<div class="divider-container narrow">
@@ -302,31 +384,66 @@
 				<h2 class="subheading">Brand Components</h2>
 					<br>
 					<h3 class="title">Fonts</h3>
-						<h4 class="subtitle">Class:</h4>
-							<code class="code">
-								.
-							</code>
-						<h4 class="subtitle">Code:</h4>
-							<code class="code">
-								&lt;
-							</code>
-						<h4 class="subtitle">Element:</h4>
-							<div class="element">
-								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<h4 class="subtitle">Block Text:</h4>
+							<div class="font roboto">
+								<div class="font-name">Roboto</div>
+								<div class="characters">
+									<div class="uppercase">abcdefghijklmnopqrstuvwxyz</div>
+									abcdefghijklmnopqrstuvwxyz<br>
+									0123456789
+								</div>
+							</div>
+						<h4 class="subtitle">Inline Text:</h4>
+							<div class="font">
+								<div class="font-name">Open Sans</div>
+								<div class="characters">
+									<div class="uppercase">abcdefghijklmnopqrstuvwxyz</div>
+									abcdefghijklmnopqrstuvwxyz<br>
+									0123456789
+								</div>
 							</div>
 					<h3 class="title">Colours</h3>
-						<h4 class="subtitle">Class:</h4>
-							<code class="code">
-								.
-							</code>
-						<h4 class="subtitle">Code:</h4>
-							<code class="code">
-								&lt;
-							</code>
-						<h4 class="subtitle">Element:</h4>
-							<div class="element">
-								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<div class="colours-container">
+							<div class="colours-item">
+								<figure class="project">
+									<img class="image" src="img/colour-black.png">
+									<figcaption class="project-info">
+										<span class="project-type">Primary:</span>
+										<br>
+										<span class="project-name">Black</span>
+										<br>
+										RGB: 85, 85, 85<br>
+										HEX: #555;
+									</figcaption>
+								</figure>
 							</div>
+							<div class="colours-item">
+								<figure class="project">
+									<img class="image" src="img/colour-white.png">
+									<figcaption class="project-info">
+										<span class="project-type">Secondary:</span>
+										<br>
+										<span class="project-name">White</span>
+										<br>
+										RGB: 255, 255, 255<br>
+										HEX: #FFF;
+									</figcaption>
+								</figure>
+							</div>
+							<div class="colours-item">
+								<figure class="project">
+									<img class="image" src="img/colour-red.png">
+									<figcaption class="project-info">
+										<span class="project-type">Tertiary:</span>
+										<br>
+										<span class="project-name">Red</span>
+										<br>
+										RGB: 255, 0, 0<br>
+										HEX: #F00;
+									</figcaption>
+								</figure>
+							</div>
+						</div>
 			</section>
 			<div class="divider-container narrow">
 				<hr class="divider">

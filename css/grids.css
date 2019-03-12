@@ -74,3 +74,11 @@
 .divider-container.narrow {
 	width: 50%;
 }
+
+.colours-container {
+	display: flex;
+}
+
+.colours-item {
+	flex: 1;
+}
