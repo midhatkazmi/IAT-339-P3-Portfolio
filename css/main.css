@@ -375,11 +375,35 @@ a:hover, a:focus, a:active {
 }
 
 .colour {
+	position: relative;
 	margin: 0;
 }
 
+.colour-values {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1rem;
+}
+
+.white {
+	color: white;
+}
+
 .colour-info {
-	margin: 0.5rem;
+	margin: 0.25rem 0 0 0;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.colour-type {
+	font-size: 0.75rem;
+}
+
+.colour-name {}
+
+.dash {
+	border: solid 1px white;
 }
 
 /*.project-info {
