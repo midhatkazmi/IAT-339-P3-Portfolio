@@ -295,6 +295,40 @@ a:hover, a:focus, a:active {
 
 /*Project*/
 
+.caption-image {
+	margin: 0;
+}
+
+.caption {
+	margin: 0.25rem 0 1rem 0;
+	text-align: center;
+	font-size: 0.75rem;
+}
+
+.project-nav {
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.25em;
+}
+
+.project-nav-link:hover .project-nav-name, .project-nav-link:focus .project-nav-name, .project-nav-link:active .project-nav-name {
+	color: #555;
+	border-bottom: solid 1px #555;
+}
+
+.next-project-link {
+	text-align: right;
+}
+
+.previous-project {
+	font-size: 0.75rem;
+	font-weight: 400;
+}
+
+.project-nav-name {
+	font-weight: 500;
+}
+
 /*Style Guide*/
 
 .subtitle {

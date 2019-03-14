@@ -69,6 +69,17 @@
 
 /*Project*/
 
+.project-nav-container {
+	display: flex;
+	margin: auto;
+	padding: 1rem;
+	width: 50%;
+}
+
+.project-nav-item {
+	flex: 1;
+}
+
 /*Style Guide*/
 
 .divider-container.narrow {
