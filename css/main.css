@@ -138,9 +138,12 @@ a:hover, a:focus, a:active {
 	text-align: center;
 }
 
+.heading-sentence .subheading {
+	margin: 0;
+}
+
 .subheading {
 	display: inline-block;
-	/*margin: 0;*/
 	margin: 1rem 0;
 	padding: 0.5rem;
 	background-color: red;
@@ -225,7 +228,7 @@ a:hover, a:focus, a:active {
 	/*margin-top: 0.5rem;*/
 	text-transform: uppercase;
 	/*font-family: 'Roboto', sans-serif;*/
-	font-weight: 500;	
+	font-weight: 500;
 }
 
 .footer {
@@ -236,7 +239,7 @@ a:hover, a:focus, a:active {
 }
 
 .footer-link {
-	/*margin: 0 0.25rem;*/
+	margin: 0 0.25rem;
 	font-weight: 400;
 }
 
@@ -299,6 +302,10 @@ a:hover, a:focus, a:active {
 	font-family: 'Roboto', sans-serif;
 }
 
+.subtitle.demo-margin, .list-item.demo-margin {
+	margin-bottom: 0;
+}
+
 .code {
 	display: block;
 	margin: 1rem;
@@ -315,10 +322,13 @@ a:hover, a:focus, a:active {
 }
 
 .element {
-	/*display: inline-block;*/
 	margin: 1rem;
-	/*padding: 1rem;*/
-	/*box-shadow: 0 1px 1px 1px #EEE;*/
+	padding: 2rem;
+	border: solid 1px #EEE;
+}
+
+.text.demo-margin {
+	margin: 0;
 }
 
 .nav.demo, .nav-link.demo {
@@ -395,10 +405,10 @@ a:hover, a:focus, a:active {
 	font-size: 0.75rem;
 }
 
-.divider-full {
+.divider-dash {
 	width: 1rem;
 	margin: 1rem 0;
-	border: solid 0.5px #555;
+	border: solid 0.75px #555;
 }
 
 .gray {
@@ -413,10 +423,15 @@ a:hover, a:focus, a:active {
 	color: white;
 }
 
-.light .divider-full {
+.light .divider-dash {
 	border-color: white;
 }
 
 .red {
 	background-color: red;
+}
+
+.work-title {
+	font-weight: 600;
+	font-style: normal;
 }
