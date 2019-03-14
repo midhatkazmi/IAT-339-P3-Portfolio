@@ -164,6 +164,12 @@ a:hover, a:focus, a:active {
 	border: solid 1px #EEE;
 }
 
+.project-link:hover .project-info, .project-link:focus .project-info, .project-link:active .project-info {
+	padding-left: 0.5rem;
+	border-left: solid 0.25rem red;
+	transition: padding-left 0.25s, border-left 0.25s;
+}
+
 .project-link:hover .image, .project-link:focus .image {
 	transform: scale(1.1);
 	filter: none;
@@ -179,10 +185,6 @@ a:hover, a:focus, a:active {
 	/*color: white;*/
 	color: red;
 	/*transition: background-color 0.5s, color 0.5s;*/
-}
-
-.project-link:hover .project-name, .project-link:focus .project-name, .project-link:active .project-name {
-	border-bottom: solid 1px #555;
 }
 
 .project {
@@ -208,6 +210,7 @@ a:hover, a:focus, a:active {
 	margin-top: 0.5rem;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.25em;
+	transition: padding-left 0.25s, border-left 0.25s;
 }
 
 .project-type {
@@ -271,13 +274,10 @@ a:hover, a:focus, a:active {
 
 .about-button {
 	padding: 1rem;
-	width: 100%;
 	background-color: #EEE;
-	color: #555;
-	border: none;
+	text-align: center;
 	text-transform: lowercase;
-	/*text-transform: uppercase;*/
-	/*font-family: 'Roboto', sans-serif;*/
+	font-weight: 400;
 	transition: background-color 0.25s, color 0.25s;
 }
 
@@ -311,9 +311,27 @@ a:hover, a:focus, a:active {
 	line-height: 1.25em;
 }
 
+.project-nav-link {
+	transition: padding 0.25s, border 0.25s;
+}
+
+.project-nav-link:hover, .project-nav-link:focus, .project-nav-link:active {
+	transition: padding 0.25s, border 0.25s;
+}
+
+.project-nav-link:hover.previous-project-link, .project-nav-link:focus.previous-project-link, .project-nav-link:active.previous-project-link {
+	padding-left: 0.5rem;
+	border-left: solid 0.25rem red;
+}
+
+.project-nav-link:hover.next-project-link, .project-nav-link:focus.next-project-link, .project-nav-link:active.next-project-link {
+	padding-right: 0.5rem;
+	border-right: solid 0.25rem red;
+}
+
 .project-nav-link:hover .project-nav-name, .project-nav-link:focus .project-nav-name, .project-nav-link:active .project-nav-name {
 	color: #555;
-	border-bottom: solid 1px #555;
+	/*border-bottom: solid 1px #555;*/
 }
 
 .next-project-link {
