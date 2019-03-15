@@ -164,6 +164,14 @@ a:hover, a:focus, a:active {
 	border: solid 1px #EEE;
 }
 
+.project-link:hover .role, .project-link:focus .role, .project-link:active .role {
+	/*background-color: red;*/
+	/*color: white;*/
+	/*transition: background-color 0.25s, color 0.25s;*/
+	background-color: rgba(238, 238, 238, 1);
+	transition: background-color 0.25s;
+}
+
 .project-link:hover .project-info, .project-link:focus .project-info, .project-link:active .project-info {
 	padding-left: 0.5rem;
 	border-left: solid 0.25rem red;
@@ -194,6 +202,7 @@ a:hover, a:focus, a:active {
 }
 
 .image-container {
+	position: relative;
 	overflow: hidden;
 }
 
@@ -203,6 +212,7 @@ a:hover, a:focus, a:active {
 }
 
 .image {
+	display: block;
 	width: 100%;
 }
 
@@ -224,6 +234,21 @@ a:hover, a:focus, a:active {
 	font-size: 0.75rem;
 	font-weight: 400;
 	/*transition: background-color 0.5s, color 0.5s;*/
+}
+
+.role {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0.5rem;
+	background-color: #EEE;
+	/*text-transform: lowercase;*/
+	font-size: 0.75rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	/*transition: background-color 0.25s, color 0.25s;*/
+	background-color: rgba(238, 238, 238, 0.75);
+	transition: background-color 0.25s;
 }
 
 .project-name {
@@ -331,7 +356,6 @@ a:hover, a:focus, a:active {
 
 .project-nav-link:hover .project-nav-name, .project-nav-link:focus .project-nav-name, .project-nav-link:active .project-nav-name {
 	color: #555;
-	/*border-bottom: solid 1px #555;*/
 }
 
 .next-project-link {
