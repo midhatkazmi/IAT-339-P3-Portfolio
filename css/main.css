@@ -331,6 +331,26 @@ a:hover, a:focus, a:active {
 }
 
 .project-nav {
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 50%;
+	text-align: center;
+}
+
+.project-nav-prompt {
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+
+.project-nav-link {
+	color: red;
+}
+
+#current-project {
+	color: #555;
+}
+
+/*.project-nav {
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.25em;
@@ -369,7 +389,7 @@ a:hover, a:focus, a:active {
 
 .project-nav-name {
 	font-weight: 500;
-}
+}*/
 
 /*Style Guide*/
 
