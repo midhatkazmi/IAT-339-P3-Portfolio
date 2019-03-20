@@ -123,6 +123,7 @@ a:hover, a:focus, a:active {
 	color: red;
 	font-size: 2rem;
 	transition: background-color 0.25s, color 0.25s;
+	z-index: 1;
 }
 
 .button-scroll-to-top .material-icons:hover, .button-scroll-to-top .material-icons:focus, .button-scroll-to-top .material-icons:active {
@@ -319,6 +320,54 @@ a:hover, a:focus, a:active {
 }
 
 /*Project*/
+
+.project-landing-item .name {
+	color: white;
+	/*text-transform: uppercase;*/
+	font-size: 1.5rem;
+	/*font-weight: 300;*/
+}
+
+.project-landing-item .type {
+	display: inline-block;
+	margin: 1rem 0;
+	/*padding: 0.5rem;*/
+	color: white;
+	/*background-color: red;*/
+	/*font-family: 'Roboto', sans-serif;*/
+	/*text-transform: uppercase;*/
+}
+
+/*.project-info-container {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.project-info-item {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}*/
+
+.project-info-list {
+	padding-left: 1rem;
+	border-left: solid 0.25rem #EEE;
+	list-style: none;
+}
+
+.project-info-list-item {
+	margin: 1rem 0;
+}
+
+.project-info-label {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
 
 .caption-image {
 	margin: 0;
