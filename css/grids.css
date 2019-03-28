@@ -121,7 +121,7 @@
 	margin: 0 1rem 2rem 1rem;
 }
 
-@media (max-width: 407px) {
+@media (max-width: 706px) {
 	.about-image {
 		width: 80%;
 		margin-top: 10%;
@@ -148,7 +148,7 @@
 	left: 2rem;
 }
 
-@media (max-width: 407px) {
+@media (max-width: 706px) {
 	.section, .divider-container.narrow, .project-nav {
 		width: 90%;
 	}
