@@ -30,15 +30,15 @@
 	display: flex;
 }
 
-@media (max-width: 407px) {
+/*@media (max-width: 407px) {
 	.nav-container {
-		flex-direction: column;*/
+		flex-direction: column;
 	}
 
 	.nav-item {
 		margin: 1rem;
 	}
-}
+}*/
 
 .footer-container {
 	display: flex;
